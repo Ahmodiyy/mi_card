@@ -22,10 +22,10 @@ class MyApp extends StatelessWidget {
               Text(
                 'Sam John',
                 style: TextStyle(
-                    fontSize: 40.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                    fontFamily: 'GrechenFuemen'),
+                  fontSize: 40.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
               ),
               Text(
                 'FLUTTER DEVELOPER',
@@ -34,6 +34,52 @@ class MyApp extends StatelessWidget {
                     fontSize: 20.0,
                     color: Colors.teal.shade100,
                     letterSpacing: 2.5),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                color: Colors.white,
+                padding: EdgeInsets.all(5.0),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.phone,
+                      color: Colors.teal.shade300,
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Text(
+                      '+222 9874 274 736',
+                      style: TextStyle(
+                          color: Colors.teal.shade500,
+                          fontSize: 20.0,
+                          fontFamily: 'SourceSansPro'),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                color: Colors.white,
+                padding: EdgeInsets.all(5.0),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.email,
+                      color: Colors.teal.shade300,
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Text(
+                      'Business@gmail.com',
+                      style: TextStyle(
+                          color: Colors.teal.shade500,
+                          fontSize: 20.0,
+                          fontFamily: 'SourceSansPro'),
+                    )
+                  ],
+                ),
               )
             ],
           ),
