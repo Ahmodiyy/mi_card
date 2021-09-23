@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
                 radius: 50,
@@ -35,50 +36,46 @@ class MyApp extends StatelessWidget {
                     color: Colors.teal.shade100,
                     letterSpacing: 2.5),
               ),
-              Container(
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-                color: Colors.white,
-                padding: EdgeInsets.all(5.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      color: Colors.teal.shade300,
-                    ),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    Text(
-                      '+222 9874 274 736',
-                      style: TextStyle(
-                          color: Colors.teal.shade500,
-                          fontSize: 20.0,
-                          fontFamily: 'SourceSansPro'),
-                    )
-                  ],
+              SizedBox(
+                height: 20.0,
+                width: 250.0,
+                child: Divider(
+                  thickness: 1.0,
+                  color: Colors.teal.shade100,
                 ),
               ),
-              Container(
+              Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
                 color: Colors.white,
-                padding: EdgeInsets.all(5.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.email,
-                      color: Colors.teal.shade300,
-                    ),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    Text(
-                      'Business@gmail.com',
-                      style: TextStyle(
-                          color: Colors.teal.shade500,
-                          fontSize: 20.0,
-                          fontFamily: 'SourceSansPro'),
-                    )
-                  ],
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal.shade300,
+                  ),
+                  title: Text(
+                    '+222 9874 274 736',
+                    style: TextStyle(
+                        color: Colors.teal.shade500,
+                        fontSize: 20.0,
+                        fontFamily: 'SourceSansPro'),
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                color: Colors.white,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal.shade300,
+                  ),
+                  title: Text(
+                    'Business@gmail.com',
+                    style: TextStyle(
+                        color: Colors.teal.shade500,
+                        fontSize: 20.0,
+                        fontFamily: 'SourceSansPro'),
+                  ),
                 ),
               )
             ],
